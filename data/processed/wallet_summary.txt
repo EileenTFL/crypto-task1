@@ -1,0 +1,7 @@
+Summary for 0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae
+Transactions considered: 5 (most recent)
+Last activity (UTC): 2025-01-15 00:13:20+00:00
+Inflow ETH: 0.600000
+Outflow ETH: 0.130000
+Net flow ETH: 0.470000
+Unique counterparties (in/out): 3/2
