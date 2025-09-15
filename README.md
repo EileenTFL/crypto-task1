@@ -28,20 +28,30 @@ python -m venv .venv
 ---
 
 ## Example usage
-**Task 1 -- Wallet Graph (Ethereum Foundation)**
+**Task 1: Wallet Graph (Ethereum Foundation)**
 $env:PYTHONPATH="."
 .\.venv\Scripts\python.exe -u scripts\task1_wallet_graph.py --n 15
 
-# Outputs created:
+### Outputs created:
 1. figs/wallet_graph.png
 2. data/processed/txn_sample.csv
 3. data/processed/wallet_summary.txt
 
-**Task 2 -- Market Forensics (CoinGecko, 30 days)**
+### Task 1 — Simple Insights (Bonus)
+- I looked at the **latest 5 transactions** on the Ethereum Foundation wallet.
+- Money **coming in** was about **0.60 ETH** and **going out** was **0.13 ETH**, so the wallet **ended up +0.47 ETH** overall.
+- It interacted with a **small number of other wallets** (3 sent to it, 2 it sent to) — that’s normal and not noisy.
+- I *didn’t see any “quick in, quick out” moves**, no back-and-forth ping-pong between the same two wallets, and no sudden burst of payments to lots of new wallets.
+- The **amounts are small**, and nothing here obviously looks shady.
+
+> Note: This is based on just 5 recent transactions. Signs that would look suspicious include:
+> lots of very fast hops (peel chains), many tiny split transfers, repeated round-trips between two wallets, sending to known mixer services/exchanges in odd patterns, or unusually high fees.
+
+**Task 2: Market Forensics (CoinGecko, 30 days)**
 $env:PYTHONPATH="."
 .\.venv\Scripts\python.exe -u scripts\task2_market_forensics.py --coin-id bitcoin --days 30 --ma 7 --z 3.0
 
-# Outputs
+### Outputs
 1. figs/price_ma_bitcoin.png
 2. figs/volume_anoms_bitcoin.png
 3. figs/returns_hist_bitcoin.png
