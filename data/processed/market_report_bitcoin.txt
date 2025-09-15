@@ -1,0 +1,14 @@
+Market Forensics Report — bitcoin
+Window: 31 days; MA=7; z-threshold=3.0
+Last data point (UTC): 2025-09-15 04:34:20+00:00
+Anomalies — returns: 0, volume: 0, any: 0
+
+Top return spikes (time, return, z):
+- 2025-09-11 00:00:00+00:00 | ret=0.0218 | z=2.07
+- 2025-08-20 00:00:00+00:00 | ret=-0.0299 | z=-1.96
+- 2025-08-30 00:00:00+00:00 | ret=-0.0359 | z=-1.88
+
+Heuristics:
+- Large return spike with large volume spike may indicate pump/dump or cascade.
+- Large volume spike with small price move may indicate wash trading/churn.
+- Clusters of anomalies across adjacent days may indicate sustained manipulation risk.
